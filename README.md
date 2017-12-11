@@ -1,4 +1,4 @@
-# playj-react-rails
+# play-react-rails
 
 Personal playground for react and rails
 
