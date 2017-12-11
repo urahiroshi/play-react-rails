@@ -1,0 +1,83 @@
+$manage-input-margin-top: 5px;
+
+.manage-page {
+  margin: 10px;
+}
+
+.manage-new-question {
+  margin: 10px 0 20px 0;
+  
+  >div {
+    padding: 8px;
+  }
+}
+
+.manage-content-toolbar {
+  margin: 10px 0;
+  height: 40px;
+
+  button {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .question-content-cell {
+    max-width: 700px;
+    min-width: 500px;
+  }
+
+  .question-answer-cell {
+    max-width: 500px;
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .question-content-cell {
+    max-width: 500px;
+    min-width: 300px;
+  }
+
+  .question-answer-cell {
+    max-width: 400px;
+    min-width: 200px;
+  }
+}
+
+.manage-content-input {
+  height: 100px;
+  overflow: auto;
+  margin-top: $manage-input-margin-top;
+}
+
+.manage-answer-input {
+  margin-top: $manage-input-margin-top;
+}
+
+.manage-bold-button {
+  font-weight: bold;
+}
+
+.manage-italic-button {
+  font-style: italic;
+}
+
+.manage-error-message {
+  margin-top: 10px;
+  color: #FF0000;
+}
+
+@mixin question-preview {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.manage-question-content-preview {
+  @include question-preview;
+  max-height: 200px;
+}
+
+.manage-question-answer-preview {
+  @include question-preview;
+}
